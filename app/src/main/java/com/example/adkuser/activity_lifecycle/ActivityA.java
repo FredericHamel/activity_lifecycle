@@ -3,10 +3,7 @@ package com.example.adkuser.activity_lifecycle;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.adkuser.activity_lifecycle.util.StatusTracker;
@@ -16,10 +13,10 @@ import com.example.adkuser.activity_lifecycle.util.Utils;
  * Created by adkuser on 3/3/15.
  */
 public class ActivityA extends Activity {
-    private Button startB;
-    private Button startC;
-    dfdfdprivate Button finishA;
-    private Button startDialog;
+    private android.widget.Button startB;
+    private android.widget.Button startC;
+    private android.widget.Button finishingA;
+    private android.widget.Button startDialog;
 
     private View.OnClickListener listener;
 
@@ -34,14 +31,14 @@ public class ActivityA extends Activity {
         super.onCreate(bundle);
         setContentView(R.layout.activity_a);
         this.initListener();
-        this.startB = (Button)findViewById(R.id.btn_start_b);
-        this.startC = (Button)findViewById(R.id.btn_start_c);
-        this.finishA = (Button)findViewById(R.id.btn_finish_a);
-        this.startDialog = (Button)findViewById(R.id.btn_start_dialog);
+        this.startB = (android.widget.Button)findViewById(R.id.btn_start_b);
+        this.startC = (android.widget.Button)findViewById(R.id.btn_start_c);
+        this.finishingA = (android.widget.Button)findViewById(R.id.btn_finish_a);
+        this.startDialog = (android.widget.Button)findViewById(R.id.btn_start_dialog);
 
         this.startB.setOnClickListener(listener);
         this.startC.setOnClickListener(listener);
-        this.finishA.setOnClickListener(listener);
+        this.finishingA.setOnClickListener(listener);
         this.startDialog.setOnClickListener(listener);
 
         this.mActivityName = getString(R.string.activity_a_label);
