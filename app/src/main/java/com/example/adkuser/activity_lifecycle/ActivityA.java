@@ -18,7 +18,7 @@ import com.example.adkuser.activity_lifecycle.util.Utils;
 public class ActivityA extends Activity {
     private Button startB;
     private Button startC;
-    private Button finishA;
+    dfdfdprivate Button finishA;
     private Button startDialog;
 
     private View.OnClickListener listener;
