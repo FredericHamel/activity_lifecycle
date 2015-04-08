@@ -93,6 +93,7 @@ limitations under the License.
     </ScrollView>
 
     <TextView
+        android:id="@+id/some_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="@dimen/font_medium"
