@@ -14,7 +14,7 @@ import com.example.adkuser.activity_lifecycle.util.Utils;
  * Created by adkuser on 3/3/15.
  */
 public class ActivityB extends Activity {
-    private Button startA;
+    private Button startingA;
     private Button startC;
     private Button finishB;
     private Button startDialog;
@@ -31,12 +31,12 @@ public class ActivityB extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_b);
         initListener();
-        startA = (Button)findViewById(R.id.btn_start_a);
+        startingA = (Button)findViewById(R.id.btn_start_a);
         startC = (Button)findViewById(R.id.btn_start_c);
         finishB = (Button)findViewById(R.id.btn_finish_b);
         startDialog = (Button)findViewById(R.id.btn_start_dialog);
 
-        startA.setOnClickListener(listener);
+        startingA.setOnClickListener(listener);
         startC.setOnClickListener(listener);
         finishB.setOnClickListener(listener);
         startDialog.setOnClickListener(listener);
